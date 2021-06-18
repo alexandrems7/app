@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Calculadora de Dano</title>
+    <link rel="stylesheet" type="text/css" href="/static/style.css" />
+   
+</head>
+<audio src="musica.mp3" autoplay>audio</audio>
+<body>
+    <section>
+        <div class="logo":>
+            <img src="{{logo1}}" width="800px" alt="">
+            
+
+    
+        </div>
+        <h2 class = "subtitulo">Selecione um inimigo:</h2>
+        <div class = "personagens">
+            
+
+            {% for vilao in viloes %}
+            <div id="vilao" class="vilao" data-vida="{{vilao.vida}}" data-nome="{{vilao.nome}}">
+                <img src="{{vilao.foto}}" width="200px" height="200px" alt="">
+                <h1 class = "texto">{{vilao.nome}}</h1>
+            </div>
+            {% endfor %}          
+            
+        </div>
+
+        <h2 class = "subtitulo">Selecione um titan para ataca-lo:</h2>
+        <div class = "personagens">
+            {% for titan in titans %}
+            <div id="titan" class="titan" data-vida="{{titan.vida}}" data-nome="{{titan.nome}}">
+                <img src="{{titan.foto}}" width="200px" height="200px" alt="">
+                <h1 class = "texto">{{titan.nome}}</h1>
+            </div>
+            {% endfor %}
+        </div>
+    </section>
+    <div class="botao">
+        <button id="botao" onclick="calcularDano()">Calcular Dano</button>
+    </div>
+        
+
+
+<script type="text/javascript" src="../static/index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: 1px solid black; */
+}
+.personagens{
+    display:flex;
+    justify-content: center;
+    max-width: 800px;
+    margin: 0 auto;
+    margin-top: 50px ;
+}
+.logo{
+    display: flex;
+    flex-flow: row;/* Centraliza os textos */
+    flex-wrap: wrap;
+    justify-content: center; /* Alinhamento dos títulos */
+    margin-top: 0%;
+    margin-bottom: 0%;
+    margin-block-end: -90px;
+}
+
+
+.vilao{
+    margin: 0 20px;
+    background-color: rgb(7, 186, 231);
+    border-radius: 50px 50px 50px 50px;
+    padding-bottom: 5px;
+    text-align: center;
+    border-bottom: 5px;
+    box-shadow: 12px 12px 20px rgb(17, 27, 46);
+    cursor:pointer;
+   
+
+}
+.titan{
+    margin: 0 20px;
+    background-color: rgb(235, 221, 32);
+    border-radius: 50px 50px 50px 50px;
+    padding-bottom: 5px;
+    text-align: center;
+    border-bottom: 5px;
+    box-shadow: 12px 12px 20px rgb(17, 27, 46);
+    cursor:pointer;
+}
+
+@font-face {
+    font-family: ttg;
+    src: url('ttg.ttf');
+}
+.texto{
+    font-size: 30px;
+    font-family: ttg;
+}
+.titulo{
+    margin-top: 0;
+    margin-block-end: 0px;
+    font-display: flex;
+    font-family: ttg;
+    font-size: 50px;
+    text-align: center;
+}
+
+.subtitulo{
+    margin-top: 50px;
+    margin-block-end: -20px;
+    font-display: flex;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 30px;
+    text-align: center;
+}
+.botao{
+    text-align: center;
+    margin-top: 50px;
+    margin-block-end: 50px;
+    
+}
+
+#botao{
+
+    font:bold 30px "Arial Black", Gadget, sans-serif;
+    font-style:normal;
+    color:#ffd324;
+    background:#158edb;
+    border:0px solid #4a3a00;
+    text-shadow:-1px -1px 1px #222222;
+    box-shadow:0px 0px 12px #2e2300;
+    -moz-box-shadow:0px 0px 12px #2e2300;
+    -webkit-box-shadow:0px 0px 12px #2e2300;
+    border-radius:90px 90px 90px 82px;
+    -moz-border-radius:90px 90px 90px 82px;
+    -webkit-border-radius:90px 90px 90px 82px;
+    padding:10px 30px;
+    cursor:pointer;
+    margin:0 auto;
+    
+}
+.titan-selecionado{
+    border-bottom: 10px solid tomato;
+    transform: scale(1.05);
+}
+
+
+.vilao-selecionado{
+    border-bottom: 10px solid tomato;
+    transform: scale(1.05);
+}
+.botao:hover,
+.vilao:hover,
+.titan:hover{
+    transform: scale(1.05);
+}
+/* Aumenta figura quando passo mouse por cima */
+
